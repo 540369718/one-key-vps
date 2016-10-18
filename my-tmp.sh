@@ -49,6 +49,7 @@ function install_lib(){
     apt-get -y update
     apt-get install vim -y
     apt-get install python-pip -y
+    pip install -U setuptools
     pip install shadowsocks
 }
 
