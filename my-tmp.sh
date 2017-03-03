@@ -51,6 +51,7 @@ function install_lib(){
     apt-get install python-pip -y
     pip install -U setuptools
     pip install shadowsocks
+    pip install speedtest-cli
 }
 
 function pre_doc(){
@@ -80,10 +81,6 @@ function run_doc(){
     echo "Test your VPS: speedtest-cli"
 }
 function apps(){
-    wget https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
-    chmod a+rx speedtest_cli.py
-    sudo mv speedtest_cli.py /usr/local/bin/speedtest-cli
-    sudo chown root:root /usr/local/bin/speedtest-cli
     wget -N --no-check-certificate https://raw.githubusercontent.com/540369718/serverspeeder/master/serverspeeder-all.sh
     bash serverspeeder-all.sh 
 }
