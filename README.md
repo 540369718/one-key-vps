@@ -10,7 +10,7 @@
 ==========
 1.下载脚本:
 ```shell
- wget https://raw.githubusercontent.com/540369718/one-key-vps/readme-edits/my-tmp.sh
+ wget https://raw.githubusercontent.com/540369718/one-key-vps/master/my-tmp.sh
 ```
 2.运行：
 ```shell
