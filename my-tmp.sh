@@ -61,6 +61,7 @@ function pre_doc(){
 \"port_password\":{
     \"7000\":\"wt5-Kpk-bx9-cW2\",
     \"7777\":\"33K-b47-BAN-xx4\",
+    \"9696\":\"zhangzhengping1\",
     \"9000\":\"password0\",
     \"9001\":\"password1\"
 },
@@ -79,7 +80,7 @@ function run_doc(){
     echo "Test your VPS: speedtest-cli"
 }
 function apps(){
-    wget https://raw.github.com/sivel/speedtest-cli/master/speedtest_cli.py
+    wget https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
     chmod a+rx speedtest_cli.py
     sudo mv speedtest_cli.py /usr/local/bin/speedtest-cli
     sudo chown root:root /usr/local/bin/speedtest-cli
