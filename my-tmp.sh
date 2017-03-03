@@ -79,6 +79,9 @@ function show_doc(){
 function run_doc(){
     ssserver -c /etc/shadowsocks.json -d start
     echo "Test your VPS: speedtest-cli"
+    echo "vim /etc/rc.local"
+    echo "ssserver -c /etc/shadowsocks.json -d start"
+    echo "/serverspeeder/bin/serverSpeeder.sh start"
 }
 function apps(){
     wget -N --no-check-certificate https://raw.githubusercontent.com/540369718/serverspeeder/master/serverspeeder-all.sh
