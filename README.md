@@ -6,7 +6,7 @@
 3. 配置SS，安装测速软件
 4. 启动SS
 
-==========
+
 ## 准备活动：更换内核
 1. 安装新的内核文件
 ```shell
@@ -27,7 +27,7 @@ uname -a
 ```
 
 ## 使用方法
-==========
+
 1.下载脚本并执行:
 ```shell
 wget https://raw.githubusercontent.com/540369718/one-key-vps/master/my-tmp.sh && chmod +x my-tmp.sh && sudo bash my-tmp.sh
