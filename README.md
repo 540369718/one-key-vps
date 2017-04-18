@@ -20,7 +20,7 @@ sudo dpkg --get-selections | grep linux-image
 ```
 3. 重建Grub引导文件，重启并固定内核文件
 ```shell
-sudo update-grup
+sudo update-grub
 sudo reboot now
 sudo apt-mark hold linux-image
 uname -a
