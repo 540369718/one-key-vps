@@ -84,7 +84,7 @@ function run_doc(){
     echo "/serverspeeder/bin/serverSpeeder.sh start"
 }
 function apps(){
-    wget -N --no-check-certificate https://raw.githubusercontent.com/540369718/serverspeeder/master/serverspeeder-all.sh
+    wget -N --no-check-certificate https://github.com/91yun/serverspeeder/raw/master/serverspeeder.sh
     bash serverspeeder-all.sh 
 }
 
