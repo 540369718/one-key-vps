@@ -85,7 +85,7 @@ function run_doc(){
 }
 function apps(){
     wget -N --no-check-certificate https://github.com/91yun/serverspeeder/raw/master/serverspeeder.sh
-    bash serverspeeder-all.sh 
+    bash serverspeeder.sh 
 }
 
 install_SS
