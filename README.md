@@ -10,7 +10,8 @@
 ## 准备活动：更换内核
 1. 安装新的内核文件
 ```shell
-sudo apt-get install linux-image-3.13.0-46-generic
+sudo apt-get install linux-image-3.13.0-46-generic (14.04)
+sudo apt-get install linux-image-4.4.0-47-generic (16.04)
 sudo dpkg --get-selections | grep linux-image
 ```
 2. 删除其他内核，并检查一下
@@ -23,7 +24,7 @@ sudo dpkg --get-selections | grep linux-image
 sudo update-grub
 sudo reboot now
 sudo apt-mark hold linux-image
-uname -a
+uname -r
 ```
 
 ## 使用方法
