@@ -84,8 +84,11 @@ function run_doc(){
     echo "/serverspeeder/bin/serverSpeeder.sh start"
 }
 function apps(){
-    wget -N --no-check-certificate https://github.com/91yun/serverspeeder/raw/master/serverspeeder.sh
-    bash serverspeeder.sh 
+    #wget -N --no-check-certificate https://github.com/91yun/serverspeeder/raw/master/serverspeeder.sh
+    #bash serverspeeder.sh     
+    wget -N --no-check-certificate -O appex.sh "https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh"
+    bash appex.sh 'install'
+    sleep 2s 
 }
 
 install_SS
