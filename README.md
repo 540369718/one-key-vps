@@ -48,4 +48,13 @@ vim /etc/rc.local
 ssserver -c /etc/shadowsocks.json -d start
 /serverspeeder/bin/serverSpeeder.sh start
 ```
-
+LotServer
+```shell
+配置文件/appex/etc/config
+/appex/bin/serverSpeeder.sh start|status|stop|restart
+```
+ServerSpeeder
+```shell
+配置文件/serverspeeder/etc/config
+/serverspeeder/bin/serverSpeeder.sh start|status|stop|restart
+```
