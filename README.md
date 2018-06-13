@@ -10,7 +10,7 @@
 ## 准备活动：更换内核
 1. 安装新的内核文件
 ```shell
-sudo apt-get install linux-image-3.13.0-46-generic (14.04)
+sudo apt-get install linux-image-4.2.0-35-generic (14.04)
 sudo apt-get install linux-image-4.4.0-47-generic (16.04)
 sudo dpkg --get-selections | grep linux-image
 ```
