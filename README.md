@@ -63,18 +63,18 @@ for Debian 8
 wget https://raw.githubusercontent.com/540369718/one-key-vps/master/libev.sh && chmod +x my-tmp.sh && sudo bash my-tmp.sh
 ```
 
-启动：/etc/init.d/shadowsocks-manager start
-停止：/etc/init.d/shadowsocks-manager stop
-重启：/etc/init.d/shadowsocks-manager restart
-查看状态：/etc/init.d/shadowsocks-manager status
+启动：/etc/init.d/shadowsocks-manager start  
+停止：/etc/init.d/shadowsocks-manager stop  
+重启：/etc/init.d/shadowsocks-manager restart  
+查看状态：/etc/init.d/shadowsocks-manager status  
 
-启动命令 /appex/bin/serverSpeeder.sh start
-停止加速 /appex/bin/serverSpeeder.sh stop
-状态查询 /appex/bin/serverSpeeder.sh status
-更新许可 /appex/bin/serverSpeeder.sh renewLic
-重新启动 /appex/bin/serverSpeeder.sh restart
+启动命令 /appex/bin/serverSpeeder.sh start  
+停止加速 /appex/bin/serverSpeeder.sh stop  
+状态查询 /appex/bin/serverSpeeder.sh status  
+更新许可 /appex/bin/serverSpeeder.sh renewLic  
+重新启动 /appex/bin/serverSpeeder.sh restart  
 
 ## 参考： 
-[shadowsocks-libev-manager](https://teddysun.com/532.html)
-[shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev)
+[shadowsocks-libev-manager](https://teddysun.com/532.html)  
+[shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev)  
 [lotServer](https://moeclub.org/2017/03/08/14/)
