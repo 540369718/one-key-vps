@@ -62,5 +62,5 @@ service status-client start|stop|restart|status
 ## 参考： 
 [shadowsocks-libev-manager](https://teddysun.com/532.html)  
 [shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev)  
-[lotServer](https://moeclub.org/2017/03/08/14/)
-[支持内核列表](https://github.com/0oVicero0/serverSpeeder_kernel/blob/master/serverSpeeder.txt)
+[lotServer](https://moeclub.org/2017/03/08/14/)  
+[支持内核列表](https://raw.githubusercontent.com/0oVicero0/serverSpeeder_kernel/master/serverSpeeder.txt)
