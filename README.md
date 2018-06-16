@@ -47,7 +47,7 @@ service serverSpeeder start|stop|restart|status|renewLic
 service status-client start|stop|restart|status   
 /etc/init.d/status-client start|stop|restart|status  
 ###### 配置文件  
-/usr/local/ServerStatus/server/config.json  
+/usr/local/ServerStatus/status-client.py  
 
 可另外安装[服务端](https://github.com/540369718/ServerStatus)    
 ``` bash
@@ -56,6 +56,8 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/540369718/Serve
 ### 云监控服务端：  
 service status-client start|stop|restart|status  
 /etc/init.d/status-server start|stop|restart|status  
+###### 配置文件  
+/usr/local/ServerStatus/server/config.json  
 
 ## 参考： 
 [shadowsocks-libev-manager](https://teddysun.com/532.html)  
