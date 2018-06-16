@@ -30,27 +30,31 @@ for Debian 8 / Ubuntu
 wget https://raw.githubusercontent.com/540369718/one-key-vps/master/libev.sh && chmod +x libev.sh && sudo bash libev.sh
 ```
 
-ss-libev命令：  
+### ss-libev命令：  
 service shadowsocks-manager start|stop|restart|status   
 /etc/init.d/shadowsocks-manager start|stop|restart|status  
-配置文件 /etc/shadowsocks-manager/config.json  
-日志文件 /var/log/syslog  
+#### 配置文件  
+/etc/shadowsocks-manager/config.json  
+#### 日志文件  
+/var/log/syslog  
 
-LotServer命令：  
+### LotServer命令：  
 service serverSpeeder start|stop|restart|status|renewLic  
 /appex/bin/serverSpeeder.sh start|stop|restart|status|renewLic   
-配置文件 /appex/etc/config  
+#### 配置文件  
+/appex/etc/config  
 
-云监控客户端：  
+### 云监控客户端：  
 service status-client start|stop|restart|status   
 /etc/init.d/status-client start|stop|restart|status  
-配置文件 /usr/local/ServerStatus/server/config.json  
+#### 配置文件  
+/usr/local/ServerStatus/server/config.json  
 
 可另外安装[服务端](https://github.com/540369718/ServerStatus)    
 ``` bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/540369718/ServerStatus/master/shell/status_server.sh && chmod +x status_server.sh && bash status_server.sh 
 ```
-云监控服务端：  
+### 云监控服务端：  
 service status-client start|stop|restart|status  
 /etc/init.d/status-server start|stop|restart|status  
 
