@@ -1,11 +1,7 @@
 # one-key-vps
 ## 自用一键配置VPS代码
 0. 更换内核
-1. 更新当前软件
-2. 安装SS
-3. 配置SS，安装测速软件
-4. 启动SS
-
+1. 安装SS
 
 ## 准备活动：更换内核
 1. 安装新的内核文件
@@ -28,51 +24,35 @@ uname -r
 ```
 
 ## 使用方法
-
-1.下载脚本并执行:
+```
+for Debian 8 / Ubuntu
 ```shell
-wget https://raw.githubusercontent.com/540369718/one-key-vps/master/my-tmp.sh && chmod +x my-tmp.sh && sudo bash my-tmp.sh
+wget https://raw.githubusercontent.com/540369718/one-key-vps/master/libev.sh && chmod +x libev.sh && sudo bash libev.sh
 ```
 
-2.运行测速软件：
-```shell
-speedtest-cli
-```
+ss-libev命令：  
+service shadowsocks-manager start|stop|restart|status   
+/etc/init.d/shadowsocks-manager start|stop|restart|status  
+配置文件 /etc/shadowsocks-manager/config.json  
+日志文件 /var/log/syslog  
 
-3.添加开机启动
-```shell
-vim /etc/rc.local
-```
-加入下面两行
-```shell
-ssserver -c /etc/shadowsocks.json -d start
-/serverspeeder/bin/serverSpeeder.sh start
-```
-LotServer
-```shell
-配置文件/appex/etc/config
-/appex/bin/serverSpeeder.sh start|status|stop|restart
-```
-ServerSpeeder
-```shell
-配置文件/serverspeeder/etc/config
-/serverspeeder/bin/serverSpeeder.sh start|status|stop|restart
-```
-for Debian 8
-```shell
-wget https://raw.githubusercontent.com/540369718/one-key-vps/master/libev.sh && chmod +x my-tmp.sh && sudo bash my-tmp.sh
-```
+LotServer命令：  
+service serverSpeeder start|stop|restart|status|renewLic  
+/appex/bin/serverSpeeder.sh start|stop|restart|status|renewLic   
+配置文件 /appex/etc/config  
 
-启动：/etc/init.d/shadowsocks-manager start  
-停止：/etc/init.d/shadowsocks-manager stop  
-重启：/etc/init.d/shadowsocks-manager restart  
-查看状态：/etc/init.d/shadowsocks-manager status  
+云监控客户端：  
+service status-client start|stop|restart|status   
+/etc/init.d/status-client start|stop|restart|status  
+配置文件 /usr/local/ServerStatus/server/config.json  
 
-启动命令 /appex/bin/serverSpeeder.sh start  
-停止加速 /appex/bin/serverSpeeder.sh stop  
-状态查询 /appex/bin/serverSpeeder.sh status  
-更新许可 /appex/bin/serverSpeeder.sh renewLic  
-重新启动 /appex/bin/serverSpeeder.sh restart  
+可另外安装[服务端](https://github.com/540369718/ServerStatus)    
+``` bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/540369718/ServerStatus/master/shell/status_server.sh && chmod +x status_server.sh && bash status_server.sh 
+```
+云监控服务端：  
+service status-client start|stop|restart|status  
+/etc/init.d/status-server start|stop|restart|status  
 
 ## 参考： 
 [shadowsocks-libev-manager](https://teddysun.com/532.html)  
