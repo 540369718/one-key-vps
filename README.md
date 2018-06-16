@@ -24,7 +24,6 @@ uname -r
 ```
 
 ## 使用方法
-```
 for Debian 8 / Ubuntu
 ```shell
 wget https://raw.githubusercontent.com/540369718/one-key-vps/master/libev.sh && chmod +x libev.sh && sudo bash libev.sh
