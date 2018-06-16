@@ -67,7 +67,7 @@ function get_my_ip(){
 
 # Install necessary lib
 function install_env(){
-	apt-get install -y python-dev libffi-dev python-setuptools curl vim wget
+	apt-get install curl vim wget python-dev libffi-dev python-setuptools -y
 	curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py && rm get-pip.py
 	pip install paramiko psutil
 }
@@ -114,7 +114,7 @@ function sample_config(){
     \"9003\":\"password3\"    
 },
 \"timeout\":600,
-\"fast_open\":true,
+\"fast_open\":false,
 \"user\":\"nobody\",
 \"method\":\"rc4-md5\",
 \"nameserver\":\"8.8.8.8\",
