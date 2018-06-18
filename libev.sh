@@ -83,10 +83,10 @@ function install_libev(){
 		install_libev_ubuntu
 	fi
 	
-	wget -O /etc/init.d/shadowsocks-manager https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-manager && chmod 755 /etc/init.d/shadowsocks-manager
+	wget -O /etc/init.d/shadowsocks-manager https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-manager && chmod +x /etc/init.d/shadowsocks-manager && update-rc.d -f shadowsocks-manager defaults  
 	mkdir /etc/shadowsocks-manager
 	sample_config
-	/etc/init.d/shadowsocks-manager start		
+	/etc/init.d/shadowsocks-manager start		  
 }
 function install_libev_debian_Jessie(){
 	sudo sh -c 'printf "deb http://deb.debian.org/debian jessie-backports main\n" > /etc/apt/sources.list.d/jessie-backports.list'
