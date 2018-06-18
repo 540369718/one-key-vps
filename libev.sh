@@ -133,9 +133,9 @@ function install_status_client(){
 
 function show_doc(){
     echo "Test your VPS: speedtest-cli"
-	echo "vim /usr/local/ServerStatus/status-client.py  //修改SERVER地址，username帐号， password密码"
-	echo "vim /usr/local/ServerStatus/customMsg.txt 添加显示信息" 
-	echo "/etc/shadowsocks-manager/config.json 配置文件"
+    echo "vim /usr/local/ServerStatus/status-client.py  //修改SERVER地址，username帐号， password密码"
+    echo "vim /usr/local/ServerStatus/customMsg.txt 添加显示信息" 
+    echo "/etc/shadowsocks-manager/config.json 配置文件"
 }
 
 install_SS
