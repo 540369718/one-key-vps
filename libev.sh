@@ -83,7 +83,8 @@ function install_libev(){
 		install_libev_ubuntu
 	fi
 	
-	wget -O /etc/init.d/shadowsocks-manager https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-manager && chmod +x /etc/init.d/shadowsocks-manager && update-rc.d -f shadowsocks-manager defaults  
+	wget -O /etc/init.d/shadowsocks-manager https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-manager  
+	chmod +x /etc/init.d/shadowsocks-manager && update-rc.d -f shadowsocks-manager defaults  
 	mkdir /etc/shadowsocks-manager
 	sample_config
 	/etc/init.d/shadowsocks-manager start		  
@@ -138,9 +139,3 @@ function show_doc(){
 }
 
 install_SS
-
-
-
-
-
-
