@@ -57,7 +57,13 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/540369718/Serve
 service status-client start|stop|restart|status  
 /etc/init.d/status-server start|stop|restart|status  
 ###### 配置文件  
-/usr/local/ServerStatus/server/config.json  
+/usr/local/ServerStatus/server/config.json 
+
+### Caddy： 
+service caddy start|stop|restart|status  
+/etc/init.d/caddy start|stop|restart|status  
+###### 配置文件  
+/usr/local/caddy/Caddyfile  
 
 ## 参考： 
 [shadowsocks-libev-manager](https://teddysun.com/532.html)  
