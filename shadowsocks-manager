@@ -84,7 +84,7 @@ do_start() {
         echo "$NAME (pid $PID) is already running..."
         return 0
     fi
-    $MANAGER --manager-address $SOCK_FILE --executable $DAEMON -c $CONF -f $PID_FILE -6
+    $MANAGER --manager-address $SOCK_FILE --executable $DAEMON -c $CONF -f $PID_FILE 
     if check_running; then
         echo "Starting $NAME success"
     else
