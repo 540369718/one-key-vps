@@ -117,7 +117,8 @@ function sample_config(){
 \"fast_open\":false,
 \"user\":\"nobody\",
 \"method\":\"rc4-md5\",
-\"nameserver\":\"8.8.8.8\",
+\"ipv6_first\": true,
+\"dns_ipv6\":true,
 \"mode\":\"tcp_and_udp\"
 }" >>/etc/shadowsocks-manager/config.json
 }
