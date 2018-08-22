@@ -107,7 +107,7 @@ function install_libev_ubuntu(){
 }
 function sample_config(){
     echo "{
-\"server\":\"${IP}\",
+\"server\":[\"[::0]\", \"0.0.0.0\"],
 \"port_password\":{
     \"9001\":\"password1\",
     \"9002\":\"password2\",
@@ -117,7 +117,7 @@ function sample_config(){
 \"fast_open\":false,
 \"user\":\"nobody\",
 \"method\":\"rc4-md5\",
-\"ipv6_first\": true,
+\"ipv6_first\": false,
 \"dns_ipv6\":true,
 \"mode\":\"tcp_and_udp\"
 }" >>/etc/shadowsocks-manager/config.json
